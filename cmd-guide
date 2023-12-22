@@ -1,0 +1,7 @@
+-- migrate db:
+npx prisma migrate dev
+
+-- open db webtool
+npx prisma studio
+
+

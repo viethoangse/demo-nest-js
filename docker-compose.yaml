@@ -1,0 +1,21 @@
+version: '24.0.7'
+services:
+  demo-database:
+    image: postgres:16.1
+    container_name: demo_database
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root@2023
+      POSTGRES_DB: demodb
+    networks:
+      - nestjs-network
+networks:
+  nestjs-network:
+#run create container
+#docker compose up -d
+#start special service/container
+#docker compose up -d ${name} -d
+#run remove container
+#docker compose down
